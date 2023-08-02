@@ -6,42 +6,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Staff Registeration</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-  </head>
+<style>
+    .row{
+        margin-bottom: 1.2%;
+    }
+</style>  
+</head>
   <body>
     <div class="container">
     <h1>STAFF/ADMIN</h1>
     <form action="" method="post">
       <div class="row">
-      <label for="stfid" class="col-md-4">STAFF ID:</label>
+      <label for="stfid" class="col-md-2">STAFF ID:</label>
       <input
         type="text"
         name="stfid"
         id="stfid"
         placeholder="FPD/SS/0001"
         required
-        class="col-md-4" />
+        class="col-md-8" />
     </div>
-      <br />
-      <label for="stfeml">EMAIL:</label>
+    <div class="row">
+      <label for="stfeml" class="col-md-2">EMAIL:</label>
       <input
         type="email"
         name="stfemail"
         id="stfeml"
         placeholder="user@fedpodam.edu.ng"
         required
+        class="col-md-8"
       />
-      <br />
+    </div>
       <input type="submit" id="cnfrm" value="Confirm" onclick="confirm()" />
-      <br />
-      <br />
-      <frame>
-        <label for="sname">SURNAME:</label>
-        <input type="text" name="sname" id="sname" />
-        &nbsp; <label for="fname">FIRST NAME:</label>
-        <input type="text" iname" name="fname" />
-        <br />
-        <label for="schl">SCHOOL:</label>
-        <select id="schl" name="schools">
+      <div class="row">
+        <label for="sname" class="col-md-2">SURNAME:</label>
+        <input type="text" name="sname" id="sname" class="col-md-4" />
+     <label for="fname" class="col-md-1">FIRST NAME:</label>
+        <input type="text" iname" name="fname" class="col-md-3" />
+    </div>
+    <div class="row">
+        <label for="schl" class="col-md-2">SCHOOL:</label>
+        <select id="schl" name="schools" class="col-md-3" >
           <option value="Consultancy">Consultancy</option>
           <option value="Engineering">Engineering</option>
           <option value="Environmental">Environmental</option>
@@ -49,8 +54,8 @@
           <option value="Management">Management</option>
           <option value="Science and Technology">Science and Technology</option>
         </select>
-        <label for="dept">DEPARTMENT/UNIT:</label>
-        <select name="dept" id="dept">
+        <label for="dept" class="col-md-2">DEPARTMENT/UNIT:</label>
+        <select name="dept" id="dept" class="col-md-3">
           <option value="Accountancy">Accountancy</option>
           <option value="Architecture">Architecture</option>
           <option value="Agricultural Engineering">
@@ -71,6 +76,7 @@
             Survey and Geo Informatics
           </option>
         </select>
+    </div>
         <br>
         <label for="lvlstp">LEVEL/STEPS</label>
         <input type="text" id="lvlstp" name="lvlstep"> &nbsp;
