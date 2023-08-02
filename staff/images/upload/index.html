@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Staff Registeration</title>
+  </head>
+  <body>
+    <h1>STAFF/ADMIN</h1>
+    <form action="" method="post">
+      <label for="stfid">STAFF ID:</label>
+      <input
+        type="text"
+        name="stfid"
+        id="stfid"
+        placeholder="FPD/SS/0001"
+        required
+      />
+      <br />
+      <label for="stfeml">EMAIL:</label>
+      <input
+        type="email"
+        name="stfemail"
+        id="stfeml"
+        placeholder="user@fedpodam.edu.ng"
+        required
+      />
+      <br />
+      <input type="submit" id="cnfrm" value="Confirm" onclick="confirm()" />
+      <br />
+      <br />
+      <frame>
+        <label for="sname">SURNAME:</label>
+        <input type="text" name="sname" id="sname" />
+        &nbsp; <label for="fname">FIRST NAME:</label>
+        <input type="text" iname" name="fname" />
+        <br />
+        <label for="schl">SCHOOL:</label>
+        <select id="schl" name="schools">
+          <option value="Consultancy">Consultancy</option>
+          <option value="Engineering">Engineering</option>
+          <option value="Environmental">Environmental</option>
+          <option value="General Studies">General Studies</option>
+          <option value="Management">Management</option>
+          <option value="Science and Technology">Science and Technology</option>
+        </select>
+        <label for="dept">DEPARTMENT/UNIT:</label>
+        <select name="dept" id="dept">
+          <option value="Accountancy">Accountancy</option>
+          <option value="Architecture">Architecture</option>
+          <option value="Agricultural Engineering">
+            Agricultural Engineering
+          </option>
+          <option value="Bussiness Administration and Management">
+            Bussiness Administration
+          </option>
+          <option value="Computer Science">Computer Science</option>
+          <option value="Computer Engineering">Computer Engineering</option>
+          <option value="Electrical Engineering">Electrical Engineering</option>
+          <option value="Estate Management">Estate Management</option>
+          <option value="Science Laboratory Technology">Science Laboratory Technology</option>
+            <option value="Statistics">Statistics</option>
+            Science Laboratory Technology
+          </option>
+          <option value="Survey and Geo Informatics">
+            Survey and Geo Informatics
+          </option>
+        </select>
+        <br>
+        <label for="lvlstp">LEVEL/STEPS</label>
+        <input type="text" id="lvlstp" name="lvlstep"> &nbsp;
+        <label for="dob">DOB</label>
+        <input type="date" id="dob" name="dob">
+      </frame>
+    </form>
+  </body>
+</html>
